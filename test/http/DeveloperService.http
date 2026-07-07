@@ -1,0 +1,8 @@
+@server=http://localhost:4004
+
+
+
+### Tasks
+# @name Tasks_GET
+GET {{server}}/odata/v4/developer/Tasks
+
