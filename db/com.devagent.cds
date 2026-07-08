@@ -11,6 +11,7 @@ using {
 
 
 entity Tasks : cuid, managed {
+    projectName     : String;
     taskDescription : String;
     filePath        : String;
     status          : Status default 'received';

@@ -3,15 +3,17 @@
   "version": "1.0.0",
   "type": "module",
   "dependencies": {
-    "@sap/cds": "^10"
+    "@langchain/langgraph": "^1.4.7",
+    "@sap/cds": "^10",
+    "dotenv": "^17.4.2"
   },
   "devDependencies": {
-    "@cap-js/sqlite": "^3",
+    "@cap-js/cds-typer": ">=0.1",
     "@cap-js/cds-types": "^0.18.0",
+    "@cap-js/sqlite": "^3",
     "@types/node": "^24.0.0",
     "tsx": "^4",
-    "typescript": "^6.0.0",
-    "@cap-js/cds-typer": ">=0.1"
+    "typescript": "^6.0.0"
   },
   "scripts": {
     "start": "cds-serve",
