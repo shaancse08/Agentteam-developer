@@ -1,5 +1,6 @@
 import cds, { Request } from "@sap/cds";
 import { developerAgentGraph } from "../lib/graph.js";
+import { v4 as uuidv4 } from "uuid";
 
 const log = cds.log("developer-agent");
 export const submitTask = async (req: Request) => {
@@ -22,6 +23,7 @@ export const submitTask = async (req: Request) => {
     projectName: projectName,
     taskDescription: taskDescription,
     fileList: [filePath],
+    taskId: uuidv4(), // Generate a unique task ID for this request
   });
 
   if (developerGraph.verifyPassed === false) {

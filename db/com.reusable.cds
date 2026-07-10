@@ -10,6 +10,8 @@ type Status    : String enum {
 
 
 type EventType : String enum {
+    task_received;
+    task_started;
     files_listed;
     files_selected;
     file_read;
