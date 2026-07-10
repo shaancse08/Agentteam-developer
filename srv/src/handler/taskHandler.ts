@@ -21,7 +21,7 @@ export const submitTask = async (req: Request) => {
   const developerGraph = await developerAgentGraph.invoke({
     projectName: projectName,
     taskDescription: taskDescription,
-    fileList: filePath,
+    fileList: [filePath],
   });
 
   if (developerGraph.verifyPassed === false) {

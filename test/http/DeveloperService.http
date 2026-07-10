@@ -11,9 +11,20 @@ GET {{server}}/Tasks
 # @name GetMetadata
 GET {{server}}/$metadata
 
+### Get Task Logs
+# @name GetTaskLogs
+GET {{server}}/TaskLogs
+
 
 
 ### Submit Task
 # @name SubmitTask
 POST {{server}}/submitTask
+Content-Type: application/json
+
+{
+  "projectName": "MyProject",
+  "taskDescription": "Implement feature X",
+  "filePath": "/path/to/file"
+}
 
