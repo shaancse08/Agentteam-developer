@@ -1,8 +1,19 @@
-@server=http://localhost:4004
+@server=http://localhost:4001/odata/v4/developer
 
 
 
 ### Tasks
 # @name Tasks_GET
-GET {{server}}/odata/v4/developer/Tasks
+GET {{server}}/Tasks
+
+
+### Get Metadata
+# @name GetMetadata
+GET {{server}}/$metadata
+
+
+
+### Submit Task
+# @name SubmitTask
+POST {{server}}/submitTask
 

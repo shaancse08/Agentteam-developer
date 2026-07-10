@@ -4,11 +4,11 @@ export const DeveloperState = Annotation.Root({
   // Input parameters for the developer service
   taskDescription: Annotation<string>(),
   taskStatus: Annotation<"received" | "in_progress" | "completed" | "failed">(),
+  projectName: Annotation<string>(), // input, set at invocation like taskId/taskDescription
 
   // Populate by the developer Agent
   taskId: Annotation<string>(), // unique identifier for the task, e.g. a UUID
 
-  projectName: Annotation<string>(), // input, set at invocation like taskId/taskDescription
 
   pastTaskSummaries:
     Annotation<

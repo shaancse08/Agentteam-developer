@@ -9,6 +9,7 @@
     "skipLibCheck": true,
     "sourceMap": true,
     "allowJs": true,
+    "outDir": "./dist",
     "paths": {
       "@sap/cds": [
         "./node_modules/@cap-js/cds-types"

@@ -5,7 +5,8 @@
   "dependencies": {
     "@langchain/langgraph": "^1.4.7",
     "@sap/cds": "^10",
-    "dotenv": "^17.4.2"
+    "dotenv": "^17.4.2",
+    "uuid": "^14.0.1"
   },
   "devDependencies": {
     "@cap-js/cds-typer": ">=0.1",
